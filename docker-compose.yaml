@@ -8,6 +8,7 @@ services:
       - "8081:8081"
     depends_on:
       - db
+    hostname: my_quarkus_app
 
   db:
     build:
@@ -18,3 +19,4 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Chochang8
       POSTGRES_DB: car_rental
+    hostname: my_postgres_db
